@@ -186,3 +186,110 @@ console.log("Total Bill = ₹" + bill);
 
 
 
+
+
+
+
+
+
+
+
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 == 0) {
+        console.log("Even:", i);
+    } else if (i % 2 !==0){
+        console.log("Odd:", i);
+    }
+}
+
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 == 0) {
+        console.log("Even:", i,"multiplication of i =",i**2);
+    } else if (i % 2 !==0){
+        console.log("Odd:", i,"multiplication of i =",i**2);
+    }
+}
+
+
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 == 0) {
+        console.log("Even:", i);
+    } else
+        {
+        console.log("Odd:", i);
+    }
+}
+
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 == 0) {
+        console.log("Even:", i);
+    } else
+        {
+        console.log("Odd:", i);
+    }
+}
+
+var nume=10
+var prime =true
+
+for ( i=2; i<nume; i++) {
+    if (nume % i == 0) {
+        prime = false;
+        break;
+    }
+    if(prime == true){
+        console.log(nume + " is a prime number");
+    }else{
+        console.log(nume + " is not a prime number");
+    }
+}
+
+var nume=100
+var prime =true
+
+for ( i=2; i<nume; i++) {
+    if (nume % i == 0) {
+        prime = false;
+        break;
+    }
+}
+    if(prime){
+        console.log(nume + " is a prime number");
+    }else{
+        console.log(nume + " is not a prime number");
+    }
+
+    var nee=100
+    for ( nee=2; i<nee; i++) {
+        var prime=true;
+
+    for( i=2; i<nee; i++) {
+        if(nee % i == 0) {
+            prime = false;
+            break;
+        }
+    }
+}
+    if(prime){
+        console.log(nee + " is a prime number");
+    }else{
+        console.log(nee + " is not a prime number");
+    }
+
+
+    let nne = 100;
+
+for (let nume = 2; nume <= nne; nume++) {
+    let prime = true;
+
+    for (let i = 2; i < nume; i++) {
+        if (nume % i == 0) {
+            prime = false;
+            break;
+        }
+    }
+
+    if (prime == true) {
+        console.log(nume);
+    }
+}
