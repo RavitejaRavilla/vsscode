@@ -293,3 +293,354 @@ for (let nume = 2; nume <= nne; nume++) {
         console.log(nume);
     }
 }
+var values=[1,2,3,4,5,7]
+
+    values.forEach((a,b) =>{
+    console.log(a,b)
+});
+
+var am="ravi"
+console.log("name in:= ",am.toUpperCase())
+
+
+var am="RAVI"
+console.log("name in:= ",am.toLowerCase())
+
+
+var nm="the way you are typing"
+console.log(nm.slice(3,6))
+console.log(nm.slice(6))
+console.log(nm.slice(0,15))
+
+var nm="the way you are typing"
+console.log(nm.indexOf("y"))
+
+var nm="    the way you are typing   "
+console.log(nm.trim())
+var nm="    the way you are typing   "
+console.log(nm.trimStart())
+var nm="    the way you are typing   "
+console.log(nm.trimEnd())
+
+var nm="    the way you are typing   "
+console.log(nm.trimEnd())
+var nm="    the way you are typing   "
+console.log(nm.includes("waye"))
+var nm="    the way you are typing   "
+console.log(nm.replace("way","ravi"))
+
+var nm="    the way you are typing way  "
+console.log(nm.replaceAll("way","ravi"))
+
+var nm="the way you are typing"
+console.log(nm.split("the type"))
+
+var nm="the way you are typing"
+console.log(nm.charAt(8))
+console.log(nm[6])
+var n1 = "programming";
+var output = "";
+
+for (var char of n1) {
+    if (output.includes(char)) {
+        continue;
+    } else {
+        output = output + char;
+    }
+}
+
+console.log(output);
+
+var mm="iam the"
+console.log(mm.repeat(4))
+
+
+
+function orderFood(callback) {
+    console.log("Food order placed");
+
+    setTimeout(()=> {
+        console.log("Food is prepared");
+        callback();
+    }, 2000);
+}
+
+function notifyCustomer() {
+    console.log("Your food is ready. Please collect your order.");
+}
+
+orderFood(notifyCustomer);
+
+
+
+
+
+
+
+   var mm="all the javascript is to learn"
+   var anm=mm.split(" ")
+   var long_word=""
+   console.log(anm)
+   var long_word
+   for(var word of anm){
+    var ab=word.length
+    //console.log(word,ab)
+    if(ab>long_word.length){
+        long_word=word
+
+      //console.log(long_word)
+    }
+    //console.log(ab)
+   }
+   console.log(long_word)
+
+
+   
+   var rr= "my name is raviou"
+   var r1="aeiou"
+   var count=0
+   var al=0
+   for(var char of rr){
+    if(r1.includes(char)){
+        count += 1
+
+    }
+    else{
+       // continue
+       al += 1
+    }
+   }
+   console.log(count)
+   console.log(al)
+
+   var n1="all the javascript is to learn"
+   var charcount={}
+   for(var char of n1){
+    console.log(charcount)
+    if(char in charcount){
+        charcount[char] += 1
+    }else{
+        charcount[char] = 1
+    }
+   }
+
+console.log(charcount)
+
+
+var ab = "the value is consider";
+var result = "";
+
+for (let i = 0; i < ab.length; i++) {
+    if (i % 2 === 0) {
+        result += ab[i].toUpperCase();
+    } else {
+        result += ab[i];
+    }
+}
+
+console.log(result);
+
+
+
+   var ab = "the value is consider";
+
+var reversed = ab.split("").reverse().join("")
+
+console.log(reversed);
+
+
+
+
+var anm=[10,20,30,40,50,60]
+var anm1=[20,3,70,90]
+var anm2="this is my pirade"
+console.log(anm.concat(anm1))
+console.log(anm.sort())
+console.log(anm.reverse())
+console.log(anm.length)
+console.log(anm.pop())
+console.log(anm.unshift(100))
+console.log(anm.shift())
+console.log(anm.join(""))
+  var y1=[4,6,8,9,20,10,0,1,2]
+
+  for(var i=0; i<y1.length; i++){
+    for(var j=0; j<y1.length; j++){
+        if(y1[i] + y1[j]==0){
+            console.log(y1[i],y1[j])
+        }
+    }
+  }
+
+  var l1=["apple","banana","sugaecane","orange","fruit"]
+  var lq2=[3,5,7,9,5]
+  var lp1=[20,30,40,50,70]
+var total=0
+  for(i=0;i<l1.length;i++){
+    var ml=lq2[i]*lp1[i]
+     //total=
+    console.log(l1[i] + "quantity:" + lq2[i],lp1[i],ml)
+    
+    total=total+ml
+    //console.log("total=", total)
+  }
+
+  console.log("total=", total)
+
+  var bb=[100,120,400,200,250,330]
+  for(i=0;i<bb.length;i++){
+    if(bb[i]>=100 && bb[i]<200){
+        console.log("unit charges is 15",bb[i])
+    }else if(bb[i]>200 && bb[i]<300){
+        console.log("unit charges is 20",bb[i])
+    }else if(bb[i]>300 &&bb[i]< 400){
+        console.log("unit charges is 25",bb[i])
+    }else if(bb[i]>400){
+        console.log("unit charges is 50",bb[i])
+    }
+
+  }
+  
+
+  var ob={
+    Name: "Raviteja",
+    class: "10"
+  };
+  console.log(ob.Name)
+  console.log(ob)
+  ob.myname="teja"
+  console.log(ob)
+  delete ob.myname
+  console.log(ob)
+  //for access keys and values
+  console.log(Object.keys(ob))
+  console.log(Object.values(ob))
+  //it will give sapare like[[name-raviteja][class-10]] likew this
+ console.log(Object.entries(ob))
+ //if we want to merge two objects
+ const ar={am:10,al:20};
+const as={an:10,all:20};
+var re=Object.assign({},ar,as)
+console.log(re)
+//if we dodnt want to modify  in object
+Object.freeze(ob)
+ob.Name="tt"
+console.log(ob)
+//it will not modify it
+//we can update the values but removing and adding will not allow
+Object.seal(ob) 
+
+//if we want to check the key like name is available in object or not if available true else false
+
+console.log(Object.hasOwn(ob,"Name"))
+// output true
+
+//here is below two object we create a object and use this and create a new another one like below but it only access values entire data we cant access it
+var lm={
+    Names: "Ravitejaaaaaa",
+    Class: "10"
+}
+
+var lm1=Object.create(lm)
+console.log(lm1.Names)
+console.log(lm1.Class)
+
+var lm3=[
+    ["Names", "Raviteja1"],
+    ["Class",  "101"],
+    ["subject","commerse"],
+]
+console.log(Object.fromEntries(lm3))
+
+//output is:- { Names: 'Raviteja1', Class: '101', subject: 'commerse' }
+
+var im ={ Names: 'Raviteja1', Class: '101', subject: 'commerse' }
+for(let k in im){
+    if (k=="Class"){
+        console.log(k+"|"+im[k])
+    }
+
+    
+}
+
+var im ={ Names: 'Raviteja1', Class: '101', subject: 'commerse' }
+for(let k in im){
+    
+        console.log(k+"|"+im[k])
+}
+
+
+var frmo={mango: 20,orange:30,banana:50,watermelon:70}
+ var purch={mango: 10,orange:15,banana:25}  
+ let final=0
+ for(let m in purch){
+    let bill1=0
+    //console.log(m)
+    let fruitsname=m
+    let fruitsprice=frmo[m]
+    //console.log(fruitsprice)
+    let pur=purch[m]
+    //console.log(pur)
+    bill1=pur*fruitsprice
+    final=final+bill1
+    console.log(fruitsname+"quantity:"+fruitsprice+ "price:"+pur+":"+ bill1)
+
+
+ } 
+console.log(final)
+
+
+var fruit_inventory = { mango: 200, orange: 300, banana: 500,watermelon:500};
+var purch = { mango: 10, orange: 15, banana: 25 };
+
+for (let fruit in fruit_inventory) {
+    let pur = purch[fruit] || 0;
+    fruit_inventory[fruit] = fruit_inventory[fruit] - pur;
+    
+}
+console.log(fruit_inventory);
+//
+//console.log(final)
+ //console.log(fruit_inventory[fruitsname])
+var buy={ mango: 10, orange: 15, banana: 25 };
+var pp={mango: 20,orange:30,banana:50,watermelon:70}
+var tunt={ mango: 200, orange: 400, banana: 500,watermelon:500};
+let after_tt_by=0
+//let ty=0
+for(let r in buy){
+    let fritname=r
+    let ir=buy[r]
+    let pr=pp[r]
+    let total=ir*pr
+    
+    after_tt_by=after_tt_by+ total
+    console.log(r+":"+ir+":"+pr)
+
+     tunt[r]=tunt[r]-pr
+    
+    //console.log(ty)
+    
+
+    
+}console.log("this is total"+ after_tt_by)
+ console.log(tunt)
+
+
+ function yui(){
+try {
+    let result=20/2
+    
+    console.log(result)
+    console.log(b)
+    console.log("txghchj")
+}
+catch(error) {
+    console.log(error.message)
+    console.log(error.name)
+    console.log(error.stack)
+    // code to handle the error
+}
+
+}
+yui()
+console.log("learning")
