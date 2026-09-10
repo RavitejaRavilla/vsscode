@@ -1,0 +1,9 @@
+import{test} from "@playwright/test"
+import{Sqatool}
+
+test.describe("check",()=>{
+    test("myname",async({page})=>{
+    await page.goto("https://sqatools.in/dummy-booking-website/")
+    await page.getByRole("link",{name:"Login Page"}).click()
+    })
+})
